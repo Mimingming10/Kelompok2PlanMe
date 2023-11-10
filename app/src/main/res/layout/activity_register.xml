@@ -72,7 +72,8 @@
         android:layout_marginTop="9sp"
         android:background="@drawable/input"
         android:hint="Masukkan email"
-        android:textSize="13sp" />
+        android:textSize="13sp"
+        android:maxLines="1"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -89,24 +90,8 @@
         android:layout_marginTop="9sp"
         android:background="@drawable/input"
         android:hint="Masukkan password"
-        android:textSize="13sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Konfirmasi Password"
-        android:layout_marginTop="9sp"
-        android:textColor="@color/white"
-        android:textSize="15sp" />
-
-    <EditText
-        android:id="@+id/inputpassword2"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="9sp"
-        android:background="@drawable/input"
-        android:hint="Masukkan ulang password"
-        android:textSize="13sp" />
+        android:textSize="13sp"
+        android:maxLines="1"/>
 
     <Button
         android:id="@+id/signup"
