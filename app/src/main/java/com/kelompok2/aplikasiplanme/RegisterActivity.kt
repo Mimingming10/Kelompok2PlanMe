@@ -1,5 +1,6 @@
 package com.kelompok2.aplikasiplanme
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -15,7 +16,10 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         db = DatabaseHelper(this)
-        binding.klikdisini.setOnClickListener{
+        binding.kliklogin.setOnClickListener{
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
+        binding.signup.setOnClickListener{
             registerUser()
         }
     }

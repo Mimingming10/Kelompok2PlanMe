@@ -9,7 +9,6 @@ import android.provider.ContactsContract.CommonDataKinds.Email
 class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,null,
     DATABASE_VERSION) {
 
-
     private val CREATE_TABLE_USER="CREATE TABLE $TABLE_USER(" +
             "$COL_USER_ID INTEGER PRIMARY KEY AUTOINCREMENT," +
             "$COL_USER_NAME TEXT," +
@@ -54,6 +53,39 @@ class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,
          return cursorCount > 0
 
     }
+
+    fun getUserAccount(): List<User> {
+        val columns = arrayOf(COL_USER_ID, COL_USER_EMAIL, COL_USER_NAME, COL_USER_PASSWORD)
+        val sortOrder = "$COL_USER_NAME ASC"
+        val userList = ArrayList<User>()
+
+        val db = this.readableDatabase
+        val cursor = db.query(
+            TABLE_USER,
+            columns,
+            null,
+            null,
+            null,
+            null,
+            sortOrder
+        )
+
+        if (cursor.moveToFirst()) {
+            do {
+                val user = User(
+                    id = cursor.getString(cursor.getColumnIndexOrThrow(COL_USER_ID)).toInt(),
+                    username = cursor.getString(cursor.getColumnIndexOrThrow(COL_USER_NAME)),
+                    email = cursor.getString(cursor.getColumnIndexOrThrow(COL_USER_EMAIL)),
+                    password = cursor.getString(cursor.getColumnIndexOrThrow(COL_USER_PASSWORD)),
+                )
+                userList.add(user)
+            } while (cursor.moveToNext())
+        }
+        cursor.close()
+        db.close()
+        return userList
+    }
+
 
     companion object{
             private const val DATABASE_VERSION =1

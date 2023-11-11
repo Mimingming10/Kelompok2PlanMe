@@ -40,10 +40,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvakun"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

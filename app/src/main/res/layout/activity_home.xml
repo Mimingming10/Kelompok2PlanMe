@@ -11,8 +11,8 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="60dp"
-        android:layout_height="54dp"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
         android:background="@drawable/tampilan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,5 +96,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.997" />
+
+    <ImageView
+        android:id="@+id/imageAccount"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/iconplanme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,14 +18,13 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         db = DatabaseHelper(this)
-        binding.klikdisini.setOnClickListener{
+        binding.klikregister.setOnClickListener{
             startActivity(Intent(this, RegisterActivity::class.java))
         }
         binding.button.setOnClickListener {
             loginUser()
         }
     }
-
 
     private fun loginUser() {
         val email = binding.textinputUsername.text.toString().trim()
@@ -40,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
                 }
 
             }else{
-                Toast.makeText(this, "Email tidak valid", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Username tidak terdaftar", Toast.LENGTH_SHORT).show()
             }
         }else{
             Toast.makeText(this, "Tolong inputkan semua", Toast.LENGTH_SHORT).show()
