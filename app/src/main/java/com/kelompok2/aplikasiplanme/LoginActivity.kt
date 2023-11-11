@@ -10,12 +10,14 @@ import com.kelompok2.aplikasiplanme.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
+    private lateinit var db: DatabaseHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        db = DatabaseHelper(this)
         binding.klikdisini.setOnClickListener{
             startActivity(Intent(this, RegisterActivity::class.java))
         }
@@ -31,6 +33,11 @@ class LoginActivity : AppCompatActivity() {
 
         if(ValidationUtils.isTextNotEmpty(email) && ValidationUtils.isTextNotEmpty(password)){
             if(ValidationUtils.isValidEmail(email)) {
+                val isSuccess = db.loginUser(email, password)
+                if (isSuccess) {
+                    startActivity(Intent(this, HomeActivity::class.java))
+                    finish()
+                }
 
             }else{
                 Toast.makeText(this, "Email tidak valid", Toast.LENGTH_SHORT).show()

@@ -54,6 +54,7 @@ class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, DATABASE_NAME,
          return cursorCount > 0
 
     }
+
     companion object{
             private const val DATABASE_VERSION =1
             private const val DATABASE_NAME = "user.db"
