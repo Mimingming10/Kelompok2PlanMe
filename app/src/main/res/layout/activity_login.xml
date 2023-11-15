@@ -9,83 +9,88 @@
     android:background="@drawable/halaman"
     tools:context=".LoginActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="20dp">
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <LinearLayout
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="200dp"
+    android:layout_marginEnd="20dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:text="Login"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="0sp"
+                android:layout_weight="1"
+                android:gravity="center"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Login"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="0sp"
-                    android:layout_weight="1"
-                    android:gravity="center"/>
+        </LinearLayout>
 
-            </LinearLayout>
+    </FrameLayout>
 
-        </FrameLayout>
+</LinearLayout>
 
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username"
-        android:layout_marginTop="20sp"
-        android:textColor="@color/white"
-        android:textSize="15sp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Username"
+    android:layout_marginTop="40sp"
+    android:textColor="@color/white"
+    android:textSize="15sp" />
 
     <EditText
-        android:layout_width="350dp"
+        android:id="@+id/textinputUsername"
+        android:layout_width="371dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="9sp"
         android:background="@drawable/input"
         android:hint="Masukkan username"
+        android:maxLines="1"
         android:textSize="13sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:layout_marginTop="9sp"
-        android:textColor="@color/white"
-        android:textSize="15sp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Password"
+    android:layout_marginTop="9sp"
+    android:textColor="@color/white"
+    android:textSize="15sp" />
 
     <EditText
-        android:layout_width="350dp"
+        android:id="@+id/textinputPassword"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="9sp"
         android:background="@drawable/input"
         android:hint="Masukkan password"
+        android:maxLines="1"
         android:textSize="13sp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="351dp"
+        android:layout_width="367dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:backgroundTint="@color/ungu"
         android:text="Login" />
 
-    <TextView
-        android:id="@+id/klikdisini"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10sp"
-        android:text="Belum punya akun? Daftar sekarang"
-        android:textColor="@color/white"/>
+<TextView
+    android:id="@+id/klikregister"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10sp"
+    android:text="Belum punya akun? Daftar sekarang"
+    android:textColor="@color/white"/>
 
 </LinearLayout>
