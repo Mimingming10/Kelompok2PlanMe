@@ -57,7 +57,8 @@
         android:background="@drawable/input"
         android:hint="Masukkan username"
         android:maxLines="1"
-        android:textSize="13sp" />
+        android:textSize="13sp"
+        android:padding="8dp"/>
 
 <TextView
     android:layout_width="wrap_content"
@@ -75,7 +76,8 @@
         android:background="@drawable/input"
         android:hint="Masukkan password"
         android:maxLines="1"
-        android:textSize="13sp" />
+        android:textSize="13sp"
+        android:padding="8dp"/>
 
     <Button
         android:id="@+id/button"

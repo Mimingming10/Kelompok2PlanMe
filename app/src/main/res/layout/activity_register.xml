@@ -55,7 +55,9 @@
         android:layout_marginTop="9sp"
         android:background="@drawable/input"
         android:hint="Masukkan username"
-        android:textSize="13sp" />
+        android:padding="8dp"
+        android:textSize="13sp"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -73,6 +75,8 @@
         android:background="@drawable/input"
         android:hint="Masukkan email"
         android:maxLines="1"
+        android:padding="8dp"
+        android:gravity="center"
         android:textSize="13sp" />
 
     <TextView
@@ -91,6 +95,8 @@
         android:background="@drawable/input"
         android:hint="Masukkan password"
         android:maxLines="1"
+        android:padding="8dp"
+        android:gravity="center"
         android:textSize="13sp" />
 
     <Button

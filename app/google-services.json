@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "153809121527",
+    "firebase_url": "https://uas-mobile2-a8cdb-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "uas-mobile2-a8cdb",
+    "storage_bucket": "uas-mobile2-a8cdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153809121527:android:b43be1f35e70923e05e3f2",
+        "android_client_info": {
+          "package_name": "com.company.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0GJWnRBExO-MPu21lZZ2Wr-HXQsWDp1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153809121527:android:206cca0b6801c91a05e3f2",
+        "android_client_info": {
+          "package_name": "com.kelompok2.aplikasiplanme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0GJWnRBExO-MPu21lZZ2Wr-HXQsWDp1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
