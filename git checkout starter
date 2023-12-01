@@ -1,0 +1,271 @@
+[33mcommit 6995fdc925ae55d0e213ebc0185c32510fb61155[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: ruly <rohmatchoirulyanwar@gmail.com>
+Date:   Sun Nov 26 19:22:42 2023 +0700
+
+    Update layout12
+
+[33mcommit ab43935f1b8c3b38fa39e9b3593257dd52299d40[m
+Merge: c5977c8 ec4b224
+Author: ruly <rohmatchoirulyanwar@gmail.com>
+Date:   Sun Nov 26 19:14:41 2023 +0700
+
+    Merge remote-tracking branch 'origin/starter'
+
+[33mcommit ec4b2245aaa116fbe75da07a4dd2a2249311c758[m[33m ([m[1;31morigin/starter[m[33m)[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Sun Nov 26 19:09:54 2023 +0700
+
+    Coba
+
+[33mcommit c5977c8095a932f94f4cc1de5261310eb3c5cb5b[m
+Author: ruly <rohmatchoirulyanwar@gmail.com>
+Date:   Sun Nov 26 18:59:09 2023 +0700
+
+    Update layout-add google-services.json
+
+[33mcommit bcc2c2e7e2e7a4afd4d73766f81e9ecd878ae730[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: ruly <rohmatchoirulyanwar@gmail.com>
+Date:   Sun Nov 26 18:33:45 2023 +0700
+
+    Update layout-add google-services.json
+
+[33mcommit f20e5df34f9198299db48390a849284e2b34b270[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Sat Nov 25 12:30:09 2023 +0700
+
+    Perbaikan3 activity_home.xml
+
+[33mcommit e4c06469156e988e1848e4eae69bea8272c0754d[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Sat Nov 25 12:10:19 2023 +0700
+
+    Perbaikan2 activity_home.xml
+
+[33mcommit 8d009a2f2bc6b14b784d851ffb1b970921c8d425[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Sat Nov 25 11:48:30 2023 +0700
+
+    Perbaikan activity_home.xml
+
+[33mcommit 98c6c87508c7034928e56222fc59494100186629[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Sat Nov 25 11:16:11 2023 +0700
+
+    Membuat activity_create_note.xml
+
+[33mcommit 30f3aa37c1c0032aa35212dae9f44556f375cab6[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Fri Nov 24 22:19:05 2023 +0700
+
+    Membuat CreateNoteActivity.kt
+
+[33mcommit f87383665080af6fddc7f1cd0f51ce6f0491433d[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Tue Nov 21 22:28:36 2023 +0700
+
+    Hapus database SQLite
+
+[33mcommit 1b2ca6a87accf8a43d368683411dc804f54d069a[m
+Author: ruly <rohmatchoirulyanwar@gmail.com>
+Date:   Mon Nov 20 11:52:27 2023 +0700
+
+    connect database
+
+[33mcommit 9ca2fd34e55aa4e6f3209f32d01ccb8c57f63aa8[m
+Merge: 2f17e8a bef2019
+Author: ruly <rohmatchoirulyanwar@gmail.com>
+Date:   Wed Nov 15 08:43:11 2023 +0700
+
+    Merge remote-tracking branch 'origin/starter'
+
+[33mcommit 2f17e8a891b57a529c4726122ba3799c3ffbfa55[m
+Author: ruly <rohmatchoirulyanwar@gmail.com>
+Date:   Mon Nov 13 14:35:36 2023 +0700
+
+    COBA
+
+[33mcommit bef20196f317d45bf65371959c828d630fc0ea39[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Sat Nov 11 16:22:38 2023 +0700
+
+    Perbaikan untuk user account
+
+[33mcommit c25b6c9b53a692f6aa8dff407957c00f85f3feea[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Sat Nov 11 10:39:51 2023 +0700
+
+    melakukan proses login untuk menuju halaman home serta membuat activity_account
+
+[33mcommit ce1e62285482887a193a0a5e17187625433ee29f[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Sat Nov 11 10:03:34 2023 +0700
+
+    perbaikkan
+
+[33mcommit a03816a334b02302bb741f7f06284c282ab36f46[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Sat Nov 11 09:02:38 2023 +0700
+
+    coba
+
+[33mcommit 667dcab7c0efd2f8c8777af4e93c989d42a504a6[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Fri Nov 10 16:41:53 2023 +0700
+
+    menambahkan class user dan validationUser serta menyambungkan peda clas login dan registrasi
+
+[33mcommit df57f6882ca8343ce36b3860030fe494078e4b33[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Fri Nov 10 14:31:38 2023 +0700
+
+    coba
+
+[33mcommit eb9fe1beac2f7c977be9bc11161333de34798c2d[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Fri Nov 10 14:29:44 2023 +0700
+
+    Menambahkan class databaseHelper
+
+[33mcommit cd05aa0fa954a342a93c80cdebe493dc1467ec31[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Fri Nov 10 14:22:59 2023 +0700
+
+    create table
+
+[33mcommit a1ea968935a80ebf09a29c9f7f98343e2414cffe[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Fri Nov 10 13:02:17 2023 +0700
+
+    coba
+
+[33mcommit 53663ec596bcf3d8fdace80fbf918ee426598f00[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Fri Nov 10 12:32:37 2023 +0700
+
+    coba
+
+[33mcommit 4b8a1256c0bc0cdb2cacaf04f8d458cf97504964[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Fri Nov 10 12:19:16 2023 +0700
+
+    Menambahkan buildFeatures
+
+[33mcommit 71c5c388d577a57f0352cd53f5e5fc347b3dfc58[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Mon Nov 6 13:43:15 2023 +0700
+
+    Menambahkan button home pada home
+
+[33mcommit ec0136cf15219d982ce69402dc1068de68426a61[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Mon Nov 6 13:38:07 2023 +0700
+
+    Menambahkan button tambah pada home
+
+[33mcommit df162d75a61450d06379ff3995ee221a2f0a624d[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Mon Nov 6 13:32:45 2023 +0700
+
+    Menambahkan button Kuliah pada home
+
+[33mcommit 70856d3c7dc35b2029558ae5aab7642788bd698e[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Mon Nov 6 13:27:20 2023 +0700
+
+    Menambahkan button Kerja pada home
+
+[33mcommit 4c307b3b921cf0c4b60f3e393d7b23121d7f058d[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Mon Nov 6 13:23:29 2023 +0700
+
+    Menambahkan button Pribadi
+
+[33mcommit f81cfb9e254c65bd98c3fb1ad5ebd2ce851f871c[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Mon Nov 6 13:22:03 2023 +0700
+
+    Menambahkan button kuliah
+
+[33mcommit fa42260b6419e37752ca7d3e8b2f8dbd5ca440cb[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Mon Nov 6 13:14:15 2023 +0700
+
+    Menambahkan button kuliah pada halaman home
+
+[33mcommit 7cc9f2d1824bc7b9bfaa3159a35e7b87267341c8[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Mon Nov 6 13:12:23 2023 +0700
+
+    Menambahkan button tampilan pada halaman home
+
+[33mcommit 810df076ce547cd4f091d4c421781f515726589e[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Mon Nov 6 12:46:08 2023 +0700
+
+    coba
+
+[33mcommit 7a7dd7387c6fe73114cc1d344f1dffbb3c5592b6[m
+Author: icachintyas <aicachintya@gmail.com>
+Date:   Mon Nov 6 12:44:12 2023 +0700
+
+    coba
+
+[33mcommit f05c094cabf276cc0f83e2a25f206dc97e4dd536[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Fri Nov 3 12:47:40 2023 +0700
+
+    Membuat login page dengan LinearLayout
+
+[33mcommit d94bd09c816fb57ad5b80df795d222d16ec81a19[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Fri Nov 3 12:11:27 2023 +0700
+
+    Membuat registrasi page dengan LinearLayout
+
+[33mcommit 925097c06b59f7dc93c9624d4294f41abb47ea81[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Fri Nov 3 09:23:53 2023 +0700
+
+    Menambahkan beberapa activity
+
+[33mcommit 009d23d6bad27b33b2780e0e718870141221be07[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Fri Nov 3 09:20:58 2023 +0700
+
+    Menambahkan beberapa icon
+
+[33mcommit e1846b735d83dda2507739e4d4f95b334f9ba3e4[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Fri Nov 3 09:14:35 2023 +0700
+
+    Coba1
+
+[33mcommit 7be9fc7d2deecd80839e8d2feb6b36a6e2804983[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Fri Nov 3 09:11:15 2023 +0700
+
+    Coba1
+
+[33mcommit 52569d2b794c2760973c141661579f308ac06d6b[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Fri Nov 3 09:09:32 2023 +0700
+
+    Coba1
+
+[33mcommit d6943a71fa1785b6470c9a66ca23175e8a77bf6f[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Fri Nov 3 09:02:28 2023 +0700
+
+    Coba1
+
+[33mcommit 86a69fbdc74f0c2304d5428156fce81f74e8cf4b[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Fri Nov 3 08:56:53 2023 +0700
+
+    Coba1
+
+[33mcommit 9bc5615d2b63c107f7626145b0a7e0040de2df24[m
+Author: Mimingming10 <natasyain10@gmail.com>
+Date:   Fri Nov 3 08:53:06 2023 +0700
+
+    First commit
