@@ -43,8 +43,27 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username"
+        android:text="Nama Lengkap"
         android:layout_marginTop="40sp"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9sp"
+        android:background="@drawable/input"
+        android:hint="Masukkan Nama Lengkap"
+        android:padding="8dp"
+        android:textSize="13sp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_marginTop="9sp"
         android:textColor="@color/white"
         android:textSize="15sp" />
 
