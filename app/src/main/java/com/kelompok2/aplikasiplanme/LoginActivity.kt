@@ -5,7 +5,9 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.core.content.ContextCompat
+import com.google.firebase.auth.FirebaseAuth
 import com.jakewharton.rxbinding2.widget.RxTextView
 import com.kelompok2.aplikasiplanme.databinding.ActivityLoginBinding
 import io.reactivex.Observable
@@ -14,10 +16,14 @@ import io.reactivex.Observable
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
+    private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Auth
+        auth = FirebaseAuth.getInstance()
 
         // Username Validation
         val usernameStream = RxTextView.textChanges(binding.textinputUsername)
@@ -57,7 +63,9 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.btnlogin.setOnClickListener {
-            startActivity(Intent(this, HomeActivity::class.java))
+            val email = binding.textinputUsername.text.toString().trim()
+            val password = binding.textinputPassword.text.toString().trim()
+            loginUser(email, password)
         }
         binding.klikregister.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
@@ -69,5 +77,20 @@ class LoginActivity : AppCompatActivity() {
             binding.textinputUsername.error = if (isNotValid) "$text tidak boleh kosong!" else null
         else if (text == "Password")
             binding.textinputPassword.error = if (isNotValid) "$text tidak boleh kosong!" else null
+    }
+
+    private fun loginUser(email: String, password: String) {
+        auth.createUserWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { login ->
+                if (login.isSuccessful) {
+                    Intent(this, HomeActivity::class.java).also {
+                        it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        startActivity(it)
+                        Toast.makeText(this, "Login Berhasil", Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    Toast.makeText(this, login.exception?.message, Toast.LENGTH_SHORT).show()
+                }
+            }
     }
 }
