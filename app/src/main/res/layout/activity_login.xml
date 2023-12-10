@@ -80,7 +80,7 @@
         android:padding="8dp"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnlogin"
         android:layout_width="367dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
