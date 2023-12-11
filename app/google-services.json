@@ -13,7 +13,20 @@
           "package_name": "com.company.project"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "153809121527-j4a5r580d1hqpcote08o261bbphgbcb5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.project",
+            "certificate_hash": "9290b5f32006a605d07b20b660221b327eb0adfd"
+          }
+        },
+        {
+          "client_id": "153809121527-j3jbnjdmh2clqat4cn1d74si5t9ahea7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyD0GJWnRBExO-MPu21lZZ2Wr-HXQsWDp1o"
@@ -21,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153809121527-j3jbnjdmh2clqat4cn1d74si5t9ahea7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     },
@@ -32,7 +50,20 @@
           "package_name": "com.kelompok2.aplikasiplanme"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "153809121527-hjiv42eff4kugl8p8fmv020ddp6iq286.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kelompok2.aplikasiplanme",
+            "certificate_hash": "9290b5f32006a605d07b20b660221b327eb0adfd"
+          }
+        },
+        {
+          "client_id": "153809121527-j3jbnjdmh2clqat4cn1d74si5t9ahea7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyD0GJWnRBExO-MPu21lZZ2Wr-HXQsWDp1o"
@@ -40,7 +71,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153809121527-j3jbnjdmh2clqat4cn1d74si5t9ahea7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

@@ -2,6 +2,7 @@ package com.kelompok2.aplikasiplanme
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.os.Build.VERSION_CODES.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
@@ -16,18 +17,18 @@ import io.reactivex.Observable
 @SuppressLint("CheckResult")
 class RegisterActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityRegisterBinding
+    private lateinit var binding: RegisterActivity
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityRegisterBinding.inflate(layoutInflater)
+        binding = RegisterActivity.inflate(layoutInflater)
         setContentView(binding.root)
 
         // Auth
         auth = FirebaseAuth.getInstance()
 
         // Fullname Validation
-        val nameStream = RxTextView.textChanges(binding.fullname)
+        val nameStream = R.TextView.textChanges(binding.fullname)
             .skipInitialValue()
             .map { name ->
                 name.isEmpty()
