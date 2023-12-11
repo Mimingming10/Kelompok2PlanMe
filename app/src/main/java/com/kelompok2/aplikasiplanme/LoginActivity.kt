@@ -80,7 +80,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun loginUser(email: String, password: String) {
-        auth.createUserWithEmailAndPassword(email, password)
+        auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { login ->
                 if (login.isSuccessful) {
                     Intent(this, HomeActivity::class.java).also {
