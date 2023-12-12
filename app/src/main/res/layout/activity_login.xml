@@ -62,7 +62,6 @@
         android:maxLines="1"
         android:textSize="13sp"
         android:padding="8dp"/>
-
     <EditText
         android:id="@+id/textinputPassword"
         android:layout_width="370dp"
