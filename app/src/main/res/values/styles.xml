@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- styles.xml -->
+
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Atur atribut-atribut gaya lainnya sesuai kebutuhan -->
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <item name="android:windowBackground">@color/darkBackground</item>
+        <!-- Atur atribut-atribut gaya lainnya sesuai kebutuhan -->
+    </style>
+
+</resources>
