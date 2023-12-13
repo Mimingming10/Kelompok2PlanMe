@@ -10,15 +10,80 @@
     tools:context=".RegisterActivity">
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
         android:layout_width="132dp"
         android:layout_height="170dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:src="@drawable/iconplanme"
-        app:layout_constrainStart_toStartOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@color/black"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopPf="@id/tvRegister" />
+        app:layout_constraintTop_toTopOf="@id/tvRegister" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Upload Image"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/llUserSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvRegister"
+        android:layout_marginTop="26dp">
+
+        <TextView
+            android:id="@+id/tvSelectionUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:letterSpacing="0.04"
+            android:layout_marginStart="26dp"
+            android:text="Pilih Pekerjaan"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rbKerja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kerja"
+                app:useMaterialThemeColors="false"
+                android:checked="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="33dp"
+                android:button="@drawable/radio_button"
+                android:textStyle="bold"
+                android:layout_weight="0.25"/>
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rbKuliah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kuliah"
+                app:useMaterialThemeColors="false"
+                android:checked="false"
+                android:textColor="@color/black"
+                android:button="@drawable/radio_button"
+                android:textStyle="bold"
+                android:layout_weight="0.25"/>
+        </RadioGroup>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,28 +118,15 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/fullname"
+        android:id="@+id/inputname"
         android:layout_width="372dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="9sp"
         android:background="@drawable/input"
-        android:hint="Masukkan Nama Lengkap"
+        android:hint="Masukkan Nama"
         android:padding="8dp"
         android:textSize="13sp"
         android:gravity="center" />
-
-
-    <EditText
-        android:id="@+id/inputusername"
-        android:layout_width="372dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="9sp"
-        android:background="@drawable/input"
-        android:hint="Masukkan Username"
-        android:padding="8dp"
-        android:textSize="13sp"
-        android:gravity="center" />
-
 
     <EditText
         android:id="@+id/inputemail"
@@ -88,7 +140,6 @@
         android:gravity="center"
         android:textSize="13sp" />
 
-
     <EditText
         android:id="@+id/inputpasssword"
         android:layout_width="372dp"
@@ -96,6 +147,18 @@
         android:layout_marginTop="9sp"
         android:background="@drawable/input"
         android:hint="Masukkan Password"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:gravity="center"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/inputpasssword2"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9sp"
+        android:background="@drawable/input"
+        android:hint="Konfimasi Password"
         android:maxLines="1"
         android:padding="8dp"
         android:gravity="center"

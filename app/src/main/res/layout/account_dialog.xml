@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:id="@+id/markedCL">
+
+    <ImageView
+        android:id="@+id/doneimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/markedtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Akun Berhasil Dibuat"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/doneimage"/>
+
+    <TextView
+        android:id="@+id/markedDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tolong cek email Anda untuk melakukan verifikasi"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/markedtitle"
+        app:layout_constraintBottom_toTopOf="@id/btnOk"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Ok"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/markedDesc"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
