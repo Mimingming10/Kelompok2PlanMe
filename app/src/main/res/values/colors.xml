@@ -8,8 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="ungu">#DB0ADF</color>
-    <color name="colorStart">#4158D0</color>
-    <color name="colorCenter">#C850C0</color>
-    <color name="colorEnd">#FFCC70</color>
+
 
 </resources>
