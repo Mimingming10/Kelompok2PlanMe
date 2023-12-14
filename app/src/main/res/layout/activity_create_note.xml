@@ -97,7 +97,7 @@
                 android:background="@drawable/input"
                 android:hint="Tuliskan catatan disini"
                 android:textSize="13sp"
-                android:margin="8dp"/>
+                android:layout_margin="8dp"/>
 
             <TextView
                 android:id="@+id/tvtanggal"

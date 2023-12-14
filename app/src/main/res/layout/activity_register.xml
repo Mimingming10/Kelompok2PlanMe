@@ -17,7 +17,7 @@
         android:src="@drawable/iconplanme"
         app:layout_constrainStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopPf="@id/tvRegister" />
+        app:layout_constraintTop_toTop0f="@id/tvRegister" />
 
     <LinearLayout
         android:layout_width="match_parent"
