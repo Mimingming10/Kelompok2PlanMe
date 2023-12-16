@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_kerjaFragment_to_assignWorkFragment"
             app:destination="@id/assignWorkFragment" />
+        <argument
+            android:name="kuliahData"
+            app:argType="com.kelompok2.aplikasiplanme.Users" />
     </fragment>
     <fragment
         android:id="@+id/assignWorkFragment"

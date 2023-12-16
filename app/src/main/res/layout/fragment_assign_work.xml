@@ -11,11 +11,115 @@
         android:id="@+id/tbAssignWork"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/back"
         android:background="@color/teal_700"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="PlanMe"
         app:titleTextColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbAssignWork"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Judul"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/black"
+            android:background="@drawable/input"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginStart="2sp"
+                android:text="Pilih Prioritas : "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/netral"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/unchecked"/>
+
+            <ImageView
+                android:id="@+id/sedang"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/unchecked"/>
+
+            <ImageView
+                android:id="@+id/mendesak"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/unchecked"/>
+
+            <TextView
+                android:id="@+id/tvTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:text="Dateline : "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/tenggat"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/baseline_date_range_24"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etIsicatatan"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/deskripsi"
+            android:gravity="start"
+            android:hint="Masukkan Catatan"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSimpan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="21dp"
+        android:src="@drawable/simpan"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

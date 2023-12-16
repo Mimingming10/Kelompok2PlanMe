@@ -106,7 +106,7 @@ class RegisterActivity : AppCompatActivity() {
                         }
                         val uId = firebaseAuth.user?.uid.toString()
                         val saveUserType = if(userType == "Kerja") "Kerja" else "Kuliah"
-                        val kerja = Users(saveUserType,uId,name,email,password,downloadURL.toString())
+                        val kerja = Users(userType = saveUserType, userId = uId, userName = name, userEmail = email, userPassword = password, userImage = downloadURL.toString())
                         db.child(uId).setValue(kerja).await()
                     }else{
                         Utils.hideDialog()

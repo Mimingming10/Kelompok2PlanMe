@@ -7,9 +7,10 @@
     tools:context=".KerjaFragment">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/tbKuliah"
+        android:id="@+id/tbKerja"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/back"
         android:background="@color/teal_700"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
