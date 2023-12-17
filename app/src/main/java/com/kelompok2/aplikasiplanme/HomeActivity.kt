@@ -1,27 +1,41 @@
 package com.kelompok2.aplikasiplanme
 
+import CreateNoteActivity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 
 import android.view.animation.AnimationUtils
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.kelompok2.aplikasiplanme.databinding.ActivityHomeBinding
+import com.kelompok2.aplikasiplanme.databinding.ActivityLoginBinding
 
 
 class HomeActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityHomeBinding
     private lateinit var addButton: FloatingActionButton
     private var isOpen = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        // Menghapus title project pada bagian atas
+        supportActionBar?.hide()
+
 
         addButton = findViewById(R.id.tambah)
 
         addButton.setOnClickListener {
             toggleFabAnimation()
         }
+        binding.tambah.setOnClickListener {
+            startActivity(Intent(this, CreateNoteActivity::class.java))
+        }
     }
+
 
     private fun toggleFabAnimation() {
         val rotateOpen = AnimationUtils.loadAnimation(this, R.anim.fab_rotate)

@@ -15,9 +15,9 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:src="@drawable/iconplanme"
-        app:layout_constrainStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTop0f="@id/tvRegister" />
+        app:layout_constraintTop_toTopOf="@id/tvRegister" />
 
     <LinearLayout
     android:layout_width="match_parent"

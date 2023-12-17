@@ -23,6 +23,10 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Menghapus title project pada bagian atas
+        supportActionBar?.hide()
+
+
         // Auth
         auth = FirebaseAuth.getInstance()
 
