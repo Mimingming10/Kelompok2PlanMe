@@ -1,6 +1,5 @@
 package com.kelompok2.aplikasiplanme
 
-import CreateNoteActivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +8,6 @@ import android.os.Bundle
 import android.view.animation.AnimationUtils
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.kelompok2.aplikasiplanme.databinding.ActivityHomeBinding
-import com.kelompok2.aplikasiplanme.databinding.ActivityLoginBinding
 
 
 class HomeActivity : AppCompatActivity() {
@@ -32,7 +30,8 @@ class HomeActivity : AppCompatActivity() {
             toggleFabAnimation()
         }
         binding.tambah.setOnClickListener {
-            startActivity(Intent(this, CreateNoteActivity::class.java))
+            val intent = Intent(this, CreateNoteActivity::class.java)
+            startActivity(intent)
         }
     }
 
