@@ -13,6 +13,8 @@ import com.google.firebase.storage.FirebaseStorage
 import com.kelompok2.aplikasiplanme.databinding.ActivityCreateNoteBinding
 import java.text.DateFormat
 import java.util.Calendar
+import com.google.firebase.database.DatabaseReference
+
 
 class CreateNoteActivity : AppCompatActivity() {
 
@@ -67,12 +69,15 @@ class CreateNoteActivity : AppCompatActivity() {
     }
 
     private fun uploadData(){
-        val title = binding.uploadTitle.text.toString()
+
+
+       val title = binding.uploadTitle.text.toString()
         val desc = binding.uploadDesc.text.toString()
         val priority = binding.uploadPriority.text.toString()
         val dataClass = DataClassNote(title, desc, priority, imageURL)
-        val currentDate = DateFormat.getDateTimeInstance().format(Calendar.getInstance().time)
-        FirebaseDatabase.getInstance().getReference("Plan Me").child(currentDate)
+        val formattedDate = "18_Dec_2023_05_58_39"
+        val databaseReference = FirebaseDatabase.getInstance().getReference(formattedDate)
+
             .setValue(dataClass).addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this@CreateNoteActivity, "Saved", Toast.LENGTH_SHORT).show()
