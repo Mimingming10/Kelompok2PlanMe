@@ -49,13 +49,28 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:22.3.0'
     implementation 'com.google.firebase:firebase-database-ktx:20.0.4'
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.3'
+    implementation 'androidx.room:room-common:2.6.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
     implementation("com.google.firebase:firebase-analytics")
 
+
     implementation "io.reactivex.rxjava2:rxjava:2.2.19"
     implementation "com.jakewharton.rxbinding2:rxbinding:2.0.0"
-    
+
+    //Material Design
+    def material_version ="1.2.1"
+    implementation "com.google.android.material:material:1.10.0"
+
+    //Room
+    def room_version = "2.6.1"
+    implementation "androidx.room:room-runtime:2.6.1"
+    implementation "androidx.room:room-compiler:2.6.1"
+
+    //Coroutines
+    def coroutines_version ="2.6.1"
+    implementation "androidx.room:room-ktx:2.6.1"
+    implementation "org.jetbrains.kotlin:kotlinx-coroutines_version-core:$coroutines_version"
 }
