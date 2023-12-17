@@ -10,7 +10,6 @@ import kotlinx.coroutines.launch
 
 class CreateNoteActivity : AppCompatActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_note)
@@ -20,7 +19,7 @@ class CreateNoteActivity : AppCompatActivity() {
         CoroutineScope(Dispatchers.IO).launch{
             NoteDB(this@CreateNoteActivity).noteDao().addNote(
                 Note(
-                    "a","a",1
+                    "a", "a",1
                 )
             )
 

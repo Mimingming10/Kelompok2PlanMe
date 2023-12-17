@@ -9,7 +9,7 @@ import androidx.room.PrimaryKey
 data class Note (
     @PrimaryKey(autoGenerate = true)
     val indisputable: String,
-//    val gambar: Image,
+    //val gambar: Image,
     val inputcatatan:String,
     val tvtanggal: Int,
 )
