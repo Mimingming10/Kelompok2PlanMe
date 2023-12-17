@@ -137,14 +137,16 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <Button
+                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/btntambahgambar"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginStart="5dp"
                         android:layout_marginEnd="5dp"
-                        android:background="@drawable/foto" />
+                        android:background="@drawable/foto"
+                        android:contentDescription="Tambahkan gambar" />
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -202,6 +204,7 @@
         android:tint="@android:color/white"
         app:fabSize="normal"
         app:layout_anchor="@+id/bottomAppBar"
-        app:srcCompat="@drawable/simpan" />
+        app:srcCompat="@drawable/simpan"
+        android:contentDescription="Tambahkan Item Baru"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -60,8 +60,10 @@
         android:background="@drawable/input"
         android:hint="Masukkan Email"
         android:maxLines="1"
+        android:padding="8dp"
         android:textSize="13sp"
-        android:padding="8dp"/>
+        tools:ignore="TouchTargetSizeCheck" />
+
     <EditText
         android:id="@+id/textinputPassword"
         android:layout_width="370dp"
@@ -70,8 +72,9 @@
         android:background="@drawable/input"
         android:hint="Masukkan Password"
         android:maxLines="1"
+        android:padding="8dp"
         android:textSize="13sp"
-        android:padding="8dp"/>
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btnlogin"
