@@ -56,6 +56,7 @@ class CreateNoteActivity : AppCompatActivity() {
         storageReference.putFile(uri!!).addOnSuccessListener { taskSnapshot ->
             val uriTask = taskSnapshot.storage.downloadUrl
             while (!uriTask.isComplete);
+
             val urlImage = uriTask.result
             imageURL = urlImage.toString()
             uploadData()

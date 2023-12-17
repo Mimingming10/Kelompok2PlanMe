@@ -26,6 +26,6 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, CreateNoteActivity::class.java)
             startActivity(intent)
         }
-
+    }
 }
 
