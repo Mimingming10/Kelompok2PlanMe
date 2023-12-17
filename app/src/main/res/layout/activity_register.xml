@@ -27,7 +27,8 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -71,10 +72,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="9sp"
         android:background="@drawable/input"
+        android:gravity="center"
         android:hint="Masukkan Username"
+        android:minHeight="48dp"
         android:padding="8dp"
-        android:textSize="13sp"
-        android:gravity="center" />
+        android:textSize="13sp" />
 
 
     <EditText
@@ -83,10 +85,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="9sp"
         android:background="@drawable/input"
+        android:gravity="center"
         android:hint="Masukkan Email"
         android:maxLines="1"
+        android:minHeight="48dp"
         android:padding="8dp"
-        android:gravity="center"
         android:textSize="13sp" />
 
 
@@ -96,11 +99,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="9sp"
         android:background="@drawable/input"
+        android:gravity="center"
         android:hint="Masukkan Password"
         android:maxLines="1"
         android:padding="8dp"
-        android:gravity="center"
-        android:textSize="13sp" />
+        android:textSize="13sp"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/signup"
