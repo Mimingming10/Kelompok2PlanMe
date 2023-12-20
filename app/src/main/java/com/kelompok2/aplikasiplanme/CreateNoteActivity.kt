@@ -70,8 +70,7 @@ class CreateNoteActivity : AppCompatActivity() {
 
     private fun uploadData(){
 
-
-       val title = binding.uploadTitle.text.toString()
+        val title = binding.uploadTitle.text.toString()
         val desc = binding.uploadDesc.text.toString()
         val priority = binding.uploadPriority.text.toString()
         val dataClass = DataClassNote(title, desc, priority, imageURL)

@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".DetailActivity">
+    tools:context=".detailActivity">
 
     <TextView
         android:id="@+id/detailTitle"
@@ -48,5 +49,35 @@
         android:id="@+id/detailDesc"
         android:textColor="@color/black"
         android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:menu_fab_size="normal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            app:menu_colorPressed="@color/purple_200"
+            app:menu_colorNormal="@color/purple_200"
+            app:menu_icon="@drawable/list"
+            app:menu_openDirection="up"
+            app:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hapus"
+                app:fab_showShadow="true"
+                app:fab_colorNormal="@color/red"
+                app:fabSize="mini"/>
+
+        </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
 
 </LinearLayout>

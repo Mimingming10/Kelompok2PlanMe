@@ -9,6 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="ungu">#DB0ADF</color>
     <color name="darkBackground">#000000</color>
-
+    <color name="red">#c70000</color>
 
 </resources>
