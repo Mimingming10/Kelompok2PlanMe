@@ -10,5 +10,16 @@
         <item name="android:windowBackground">@color/darkBackground</item>
         <!-- Atur atribut-atribut gaya lainnya sesuai kebutuhan -->
     </style>
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Customize your search view style here -->
+        <item name="android:background">@drawable/input</item>
+        <item name="android:src">@drawable/search</item>
+        <item name="queryBackground">@drawable/input</item>
+        <item name="closeIcon">@drawable/clear</item>
+        <item name="searchIcon">@drawable/search</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
 
 </resources>

@@ -37,6 +37,7 @@
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
+
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search"
         android:layout_width="match_parent"
@@ -44,13 +45,15 @@
         android:layout_marginTop="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
+        android:focusable="false"
+        android:background="@drawable/input"
+        app:queryHint="Search...."
         app:iconifiedByDefault="false"
         app:searchHintIcon="@color/white"
-        app:queryHint="Search...."
-        android:focusable="false"
         app:closeIcon="@drawable/clear"
         app:searchIcon="@drawable/search"
-        android:background="@drawable/input"/>
+        app:theme="@style/SearchViewStyle" />
+
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

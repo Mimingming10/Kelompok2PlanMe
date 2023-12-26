@@ -14,6 +14,8 @@ import com.kelompok2.aplikasiplanme.databinding.ActivityCreateNoteBinding
 import java.text.DateFormat
 import java.util.Calendar
 import com.google.firebase.database.DatabaseReference
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 
 class CreateNoteActivity : AppCompatActivity() {
