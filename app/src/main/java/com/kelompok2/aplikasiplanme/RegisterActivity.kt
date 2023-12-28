@@ -70,7 +70,7 @@ class RegisterActivity : AppCompatActivity() {
             showTextMinimalAlert(it, "Password")
         }
 
-        // Button Enable True or False
+        // Button benar atau salah
         val invalidFieldsStream = Observable.combineLatest(
             nameStream,
             emailStream,
@@ -81,15 +81,16 @@ class RegisterActivity : AppCompatActivity() {
             })
         invalidFieldsStream.subscribe { isValid ->
             if (isValid) {
+                // Mengaktifkan tombol jika semua kolom benar
                 binding.signup.isEnabled = true
                 binding.signup.backgroundTintList = ContextCompat.getColorStateList(this, R.color.ungu)
             } else {
+                // Nonaktifkan tombol jika salah satu kolom salah
                 binding.signup.isEnabled = false
                 binding.signup.backgroundTintList = ContextCompat.getColorStateList(this, android.R.color.black)
             }
         }
 
-        // Click
         binding.signup.setOnClickListener {
             val email = binding.inputemail.text.toString().trim()
             val password = binding.inputpasssword.text.toString().trim()
@@ -100,9 +101,11 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
+    // Menampilkan pesan peringatan
     private fun showNameExistAlert(isNotValid: Boolean) {
         binding.fullname.error = if (isNotValid) "Nama tidak boleh kosong!" else null
     }
+    // Menampilkan pesan peringatan
     private fun showTextMinimalAlert(isNotValid: Boolean, text: String) {
         if (text == "Username")
             binding.inputusername.error = if (isNotValid) "$text harus lebih dari 6 huruf!" else null
@@ -110,10 +113,12 @@ class RegisterActivity : AppCompatActivity() {
             binding.inputpasssword.error = if (isNotValid) "$text harus lebih dari 8 huruf!" else null
     }
 
+    // Menampilkan pesan peringatan
     private fun showEmailValidAlert(isNotValid: Boolean) {
         binding.inputemail.error = if (isNotValid) "Email tidak valid" else null
     }
 
+    // Mendaftarkan usesr pada firebase menggunakan email dan password
     private fun registerUser(email: String, password: String) {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) {

@@ -10,12 +10,6 @@ import com.google.firebase.database.*
 import com.kelompok2.aplikasiplanme.databinding.ActivityHomeBinding
 import java.util.*
 import kotlin.collections.ArrayList
-import androidx.recyclerview.widget.RecyclerView
-
-
-
-
-
 
 class HomeActivity : AppCompatActivity() {
 
@@ -25,21 +19,17 @@ class HomeActivity : AppCompatActivity() {
     var databaseReference:DatabaseReference? = null
     var eventListener:ValueEventListener? = null
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
-
         // Menghapus title project pada bagian atas
         supportActionBar?.hide()
 
-     //  val gridLayoutManager = GridLayoutManager(this@HomeActivity, 1)
-     //  binding.recyclerView.layoutManager = gridLayoutManager
+        val gridLayoutManager = GridLayoutManager(this@HomeActivity, 1)
+        binding.recyclerView.layoutManager = gridLayoutManager
+        binding.search.clearFocus()
 
         val builder = AlertDialog.Builder(this@HomeActivity)
         builder.setCancelable(false)
@@ -48,10 +38,11 @@ class HomeActivity : AppCompatActivity() {
         dialog.show()
         dataList = ArrayList()
         adapter = Adapter(this@HomeActivity, dataList)
-      //  binding.recyclerview.adapter = adapter
-        databaseReference = FirebaseDatabase.getInstance().getReference("Plan ME")
+        binding.recyclerView.adapter = adapter
+        databaseReference = FirebaseDatabase.getInstance().getReference("Plan Me")
         dialog.show()
 
+        // Sinkronisasi database realtime dengan RV
         eventListener = databaseReference!!.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 dataList.clear()

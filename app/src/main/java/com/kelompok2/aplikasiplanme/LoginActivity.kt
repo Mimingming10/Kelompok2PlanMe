@@ -48,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
             showTextMinimalAlert(it, "Password")
         }
 
-        // Button Enable True or False
+        // Button benar atau salah
         val invalidFieldsStream = Observable.combineLatest(
             usernameStream,
             passwordStream,
@@ -57,9 +57,11 @@ class LoginActivity : AppCompatActivity() {
             })
         invalidFieldsStream.subscribe { isValid ->
             if (isValid) {
+                // Mengaktifkan tombol jika semua kolom benar
                 binding.btnlogin.isEnabled = true
                 binding.btnlogin.backgroundTintList = ContextCompat.getColorStateList(this, R.color.ungu)
             } else {
+                // Nonaktifkan tombol jika salah satu kolom salah
                 binding.btnlogin.isEnabled = false
                 binding.btnlogin.backgroundTintList = ContextCompat.getColorStateList(this, android.R.color.black)
             }
@@ -75,6 +77,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    // Menampilkan pesan peringatan
     private fun showTextMinimalAlert(isNotValid: Boolean, text: String) {
         if (text == "Username")
             binding.textinputUsername.error = if (isNotValid) "$text tidak boleh kosong!" else null
@@ -86,11 +89,13 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { login ->
                 if (login.isSuccessful) {
+                    // Melanjutkan ke home activity dan menghapus back stack
                     Intent(this, HomeActivity::class.java).also {
                         it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(it)
                         Toast.makeText(this, "Login Berhasil", Toast.LENGTH_SHORT).show()
                     }
+                    // Menampilkan pesan error
                 } else {
                     Toast.makeText(this, login.exception?.message, Toast.LENGTH_SHORT).show()
                 }

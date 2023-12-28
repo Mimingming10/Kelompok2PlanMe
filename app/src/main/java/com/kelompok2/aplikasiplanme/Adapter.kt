@@ -1,5 +1,6 @@
 package com.kelompok2.aplikasiplanme
 
+import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +11,7 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class Adapter(private val context:android.content.Context, private var dataList:List<DataClassNote>): RecyclerView.Adapter<MyViewHolder>() {
+class Adapter(private val context:Context, private var dataList:List<DataClassNote>): RecyclerView.Adapter<MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.recyecler_item, parent, false)
         return MyViewHolder(view)

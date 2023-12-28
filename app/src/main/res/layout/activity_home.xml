@@ -49,7 +49,7 @@
         android:background="@drawable/input"
         app:queryHint="Search...."
         app:iconifiedByDefault="false"
-        app:searchHintIcon="@color/white"
+        app:searchHintIcon="@color/black"
         app:closeIcon="@drawable/clear"
         app:searchIcon="@drawable/search"
         app:theme="@style/SearchViewStyle" />
